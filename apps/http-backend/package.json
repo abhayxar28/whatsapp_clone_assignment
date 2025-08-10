@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsc -b && mkdir -p dist/controllers && cp -r src/controllers/json dist/controllers/",
     "dev": "pnpm run build && node dist/index.js",
     "start": "pnpm run build && pnpm run dev"
   },
